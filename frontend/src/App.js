@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import axios from "axios";
 
 //const API_URL = "http://127.0.0.1:5000/predict";    this is localhost url
-const API_URL = "https://tata-steel-backend.onrender.com/predict";  // this is web server url only for backend
+const API_URL = "https://aritranandi2005-tata-steel-defect-backend.hf.space/predict"; // this is web server url only for backend
 
 
 const DEFECT_META = {
