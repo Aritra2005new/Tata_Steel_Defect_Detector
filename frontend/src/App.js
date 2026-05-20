@@ -162,7 +162,12 @@ export default function App() {
           const fd = new FormData();
           fd.append("image", item.file);
           try {
-            return await axios.post(API_URL, fd);
+            return await axios.post(API_URL, fd, {
+            headers: {
+            "Content-Type": "multipart/form-data",
+            },
+            timeout: 120000,
+            });
           } catch {
             return null;
           }
